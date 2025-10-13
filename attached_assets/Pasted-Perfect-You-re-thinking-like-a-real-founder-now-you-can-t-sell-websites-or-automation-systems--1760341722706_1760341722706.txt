@@ -1,0 +1,158 @@
+Perfect. You’re thinking like a real founder now 💡 — you can’t sell websites or automation systems without having a **killer website** yourself.
+
+Since you want to **build through Replit**, I’ll write you a **System Master Prompt** that you can paste straight into Replit’s AI or use in ChatGPT’s Replit agent.
+This will act as your **complete build spec** — describing *exactly* how to structure, style, and deploy* your Hero Digital Labs website.*
+
+---
+
+## 🧠 **SYSTEM MASTER PROMPT — HERO DIGITAL LABS SAAS-STYLE WEBSITE**
+
+> You are a senior full-stack front-end engineer and brand designer.
+> Build a **production-ready, fast-loading, single-page website** for the company **Hero Digital Labs** (`herodigital.vip`).
+> The goal is to make the site feel like a **SaaS dashboard homepage** — sleek, minimal, tech-driven — but instead of a pricing or signup flow, it should encourage visitors to **reach out for custom web & automation projects**.
+
+---
+
+### 🧱 1. **Overall Framework**
+
+* Deliver **one file**: `index.html` with **inline CSS** and minimal vanilla JS.
+* Must be **static** and deploy instantly on Replit.
+* Use **responsive design**, mobile-first layout.
+* Keep **total transfer size < 400 KB** (excluding images).
+* Avoid frameworks; no external libraries beyond Google Fonts if absolutely necessary.
+* Use semantic HTML structure: `<header>`, `<main>`, `<section>`, `<footer>`.
+
+---
+
+### 🎨 2. **Visual Style**
+
+| Element           | Specification                                                                                             |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| **Color palette** | Charcoal #0E1117 background • White #FFFFFF text • Accent electric blue #00B7FF                           |
+| **Typography**    | Use `Inter`, `Space Grotesk`, or `Satoshi`. Headings bold, body medium.                                   |
+| **Layout**        | Centered grid sections, lots of whitespace, card-style containers, rounded corners `border-radius: 12px`. |
+| **Imagery**       | Use 1–2 subtle vector illustrations or abstract gradient shapes (CSS only).                               |
+| **Hover states**  | Blue accent underline or glow.                                                                            |
+| **Animations**    | Light fade-in or slide-up transitions using CSS `@keyframes`, duration < 0.4 s.                           |
+
+---
+
+### 🚀 3. **Structure & Sections**
+
+#### **Header / Navbar**
+
+* Left: small SVG logo (Hero “H” icon).
+* Right: nav links → *Home*, *Solutions*, *About*, *Contact*.
+* CTA button: **“Book a Call”** (scrolls to contact section).
+
+#### **Hero Section**
+
+* Headline:
+
+  > *“AI. Automation. Web Systems — Built for Growth.”*
+* Subhead:
+
+  > *Hero Digital Labs helps small businesses grow through intelligent design and automation.*
+* CTA buttons: **“Get a Free Consultation”** + **“View Work”**.
+* Background: abstract blue line-flow animation or gradient blur.
+
+#### **Solutions Section**
+
+3 responsive cards:
+
+1. **Web Design** – “High-performance sites that convert.”
+2. **Automation Systems** – “Save hours with smart workflows.”
+3. **Growth Strategy** – “Simplify, systemize, scale.”
+   Each with small SVG icon + hover elevation.
+
+#### **About Section**
+
+Short paragraph:
+
+> *Founded by Ryan Heron, Hero Digital Labs blends design, automation, and AI to help ambitious brands scale intelligently.*
+
+Add 3 bullet values: *Speed*, *Precision*, *Innovation.*
+
+#### **Contact Section**
+
+Two columns:
+
+* Left: short copy (“Let’s build your next system.”)
+* Right: simple contact form:
+
+  * Name
+  * Email
+  * Message
+  * Submit → POST JSON to placeholder webhook `https://n8n.myserver.com/webhook/contact`
+  * Show success/fail states in JS.
+
+Below: quick info line:
+
+```
+📧 ryan@herodigital.vip | 🌍 Gold Coast & Brisbane | 🕓 Mon–Fri 9–5
+```
+
+#### **Footer**
+
+* Mini site map
+* Social icons (LinkedIn, Instagram)
+* Copyright © 2025 Hero Digital Labs
+* Light blue divider line.
+
+---
+
+### ⚙️ 4. **Functional Requirements**
+
+* JS handles form submission with fetch() → webhook.
+* Smooth scrolling for nav anchors.
+* Sticky nav on scroll.
+* Minimal console logging for button clicks (to later replace with analytics).
+* Accessible: alt text on icons, proper contrast ratio, focus outlines.
+
+---
+
+### 📈 5. **SEO & Meta**
+
+* `<title>`: “Hero Digital Labs | AI, Automation & Web Systems for Growth”
+* `<meta description>`: “We help businesses scale with modern websites and AI-powered systems. Based on the Gold Coast.”
+* OpenGraph/Twitter tags.
+* Favicon (the “H” arrow icon).
+
+---
+
+### 🧩 6. **Deliverables**
+
+* `index.html` fully functional, inline styles, minimal JS.
+* No mockups or stock images.
+* File ready for direct Replit deployment.
+* Must load in < 2 s and pass Lighthouse ≥ 90.
+
+---
+
+### 🧠 7. **Brand Copy to Include**
+
+* Tagline: *“Your business. Upgraded.”*
+* Callout banner (optional):
+
+  > “We’re currently accepting 3 new client projects this month — book your free audit call.”
+
+---
+
+### ✳️ 8. **Optional Enhancements**
+
+If time allows:
+
+* Add a **toggle switch** for dark/light mode (persist state in localStorage).
+* Add an **animated underline** on hover for links.
+* Include a small **testimonials slider** (pure CSS).
+
+---
+
+### 🎯 **Outcome**
+
+Generate a **modern SaaS-style landing site** that looks like a live dashboard homepage — minimalist, professional, and branded for **Hero Digital Labs** — emphasizing clarity, intelligence, and forward motion.
+Ensure the code is fully deployable on Replit with no external build process required.
+
+---
+
+Would you like me to now **generate the actual HTML code** (fully styled and ready to paste into Replit), following this spec exactly?
