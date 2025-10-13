@@ -1,0 +1,209 @@
+Perfect — this pivot is smart. A **website-first positioning** is easier to sell, easier to systemize, and more tangible to business owners. You can still integrate “AI” subtly as part of *how* you build (automation, SEO, analytics), but your core service should now scream **“high-converting websites for growing businesses.”**
+
+Here’s your **master system prompt for Replit** to build a *conversion-optimized, SEO-driven agency site* for **Hero Digital Labs**, focused on **Website Design & Redesign** services.
+
+---
+
+## 🧠 SYSTEM PROMPT FOR REPLIT
+
+**You are a senior CRO-focused web engineer and copy strategist.**
+Your goal is to build a **production-ready SaaS-style website** for **Hero Digital Labs**, an agency that helps businesses grow through high-performing website design and redesign.
+
+### 🎯 OBJECTIVE
+
+Build a modern, responsive landing site that:
+
+* Converts visitors into *consultations or booked calls*
+* Positions Hero Digital Labs as a *trusted, modern web design agency*
+* Ranks high for SEO terms like “website redesign Gold Coast”, “modern business websites”, “small business website packages”, and “affordable website design Australia.”
+
+---
+
+## 🌐 PAGE STRUCTURE
+
+### 1. **Header (Sticky)**
+
+* **Logo:** “HD” monogram (white or blue accent)
+* **Navigation:** Home | Services | Portfolio | About | Contact
+* **CTA Button:** “Get a Free Website Audit” (links to booking section)
+
+---
+
+### 2. **Hero Section**
+
+**Headline:**
+
+> “High-Performing Websites That Turn Visitors Into Clients.”
+
+**Subheadline:**
+
+> Hero Digital Labs builds fast, modern, and beautiful websites designed to grow your business — not just exist online.
+
+**Primary CTA:**
+
+> “Get a Free Consultation”
+
+**Secondary CTA:**
+
+> “View Our Work”
+
+**Visual:**
+Minimal 3D mockup of a laptop or mobile screen showing a clean business site (dark blue glow background).
+
+---
+
+### 3. **Why Choose Us**
+
+Use trust-based bullet points with icons:
+
+* ⚡ Lightning-fast & mobile optimized
+* 🎯 Designed for conversions, not clutter
+* 🔍 SEO-ready with Google best practices
+* 🧠 Smart automation for leads & follow-ups
+* 🛠️ Custom redesigns for old or outdated sites
+
+**CTA:** “See What’s Possible for Your Business”
+
+---
+
+### 4. **Our Services**
+
+Three clean cards with hover effects:
+
+1. **Website Redesigns** — Give your business a modern refresh.
+2. **New Website Builds** — Launch your brand online, the right way.
+3. **Landing Page Optimization** — Turn clicks into conversions.
+
+Include “From $799” for SEO and anchoring effect.
+CTA under each card: “Get a Quote”
+
+---
+
+### 5. **Results & Social Proof**
+
+> “Our websites help local businesses double their leads.”
+
+Include 3 testimonials (can be placeholders like):
+
+* “After Hero Digital Labs rebuilt our site, our bookings increased by 40%.” — *Coastal Cleaners, Gold Coast*
+* “They made it simple and fast — best investment for my business.” — *Knight Movers, Brisbane*
+* “Our new site feels like a real brand now.” — *Haven Interiors, Byron Bay*
+
+Add 5-star icons and subtle location names for SEO.
+
+---
+
+### 6. **Portfolio Preview**
+
+Grid layout with 3–6 images (website mockups).
+Hover → “View Live Site”
+Include caption with business names for SEO (e.g. “Knight Movers Redesign – Brisbane”).
+
+---
+
+### 7. **Free Audit / Consultation Form**
+
+Headline:
+
+> “Get a Free Website Audit + Strategy Call”
+
+Subtext:
+
+> We’ll review your current website and show you exactly how to improve conversions, speed, and design — free of charge.
+
+**Form Fields:**
+
+* Name
+* Business Name
+* Email
+* Website URL (optional)
+* Message
+
+Form sends data via `fetch()` to your **n8n webhook**.
+
+✅ Include success and failure messages inline.
+
+---
+
+### 8. **About Hero Digital Labs**
+
+> We help ambitious businesses stand out online.
+> Founded by Ryan Heron, Hero Digital Labs blends design, strategy, and automation to create websites that actually grow your business.
+
+Subtext:
+
+> Based in the Gold Coast. Working with businesses across Australia.
+
+---
+
+### 9. **Footer**
+
+* Contact: [ryan@herodigital.vip](mailto:ryan@herodigital.vip)
+* Social Icons (LinkedIn, Instagram)
+* Mini sitemap
+* “© 2025 Hero Digital Labs. All rights reserved.”
+
+Dark theme footer.
+
+---
+
+## 🧩 DESIGN SPECIFICATIONS
+
+**Style:**
+
+* Dark blue / black theme (#0E1117)
+* Accent: Electric blue (#00B7FF)
+* Font: Inter / Space Grotesk / Satoshi
+* Layout: SaaS-inspired, minimal, lots of whitespace
+* Rounded buttons, soft shadows, subtle gradients
+
+**UI Rules:**
+
+* Sticky header and smooth scroll
+* Lazy-load images
+* Animate section fades in on scroll
+* Mobile-first, grid-based layout
+
+---
+
+## 💬 COPYWRITING & SEO RULES
+
+**Tone:** Confident, helpful, direct — speak to business owners, not developers.
+**Target keywords:**
+
+* “website redesign Gold Coast”
+* “affordable website design Brisbane”
+* “business website builder Australia”
+* “web design agency Gold Coast”
+
+**Include SEO Elements:**
+
+* `<title>`: “Hero Digital Labs | Website Design & Redesign Experts Gold Coast”
+* `<meta name="description">`: “Hero Digital Labs builds high-performing websites for small businesses. Modern design, SEO-ready, and built for growth.”
+* `<h1>` only once in hero, others use `<h2>`.
+* `<img alt>` tags for all visuals.
+* JSON-LD structured data for LocalBusiness (address, contact, sameAs).
+
+---
+
+## ⚙️ FUNCTIONAL FEATURES
+
+* Contact forms POST to `https://n8n.myserver.com/webhook/lead`
+* On submission → “Thanks! We’ll contact you within 24 hours.”
+* Add console log placeholders for Google Analytics + Meta Pixel integration.
+
+---
+
+## 🧱 FILE OUTPUT REQUIREMENTS
+
+Generate one production-ready `index.html` file with:
+
+* Inline `<style>` for speed
+* Inline `<script>` for form handling
+* All CTAs and SEO tags complete
+* Optimized for Lighthouse 90+ in Performance, SEO, Accessibility
+
+---
+
+Would you like me to generate this **index.html file** right now (ready for deployment on Replit)?
+I can include your Hero Digital Labs logo and working consultation form.

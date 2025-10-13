@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-foreground">Hero Digital Labs</span>
             </div>
             <p className="text-muted-foreground">
-              AI. Automation. Web Systems — Built for Growth.
+              High-Performing Websites That Turn Visitors Into Clients.
             </p>
           </div>
 
@@ -39,9 +39,18 @@ export default function Footer() {
                 <button
                   onClick={() => scrollToSection("solutions")}
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="footer-link-solutions"
+                  data-testid="footer-link-services"
                 >
-                  Solutions
+                  Services
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("portfolio")}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  data-testid="footer-link-portfolio"
+                >
+                  Portfolio
                 </button>
               </li>
               <li>

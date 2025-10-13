@@ -8,7 +8,9 @@ import { Mail, MapPin, Clock } from "lucide-react";
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
+    businessName: "",
     email: "",
+    websiteUrl: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,10 +34,10 @@ export default function ContactSection() {
 
       if (response.ok) {
         toast({
-          title: "Message sent!",
-          description: "We'll get back to you within 24 hours.",
+          title: "Thanks! We'll contact you within 24 hours.",
+          description: "Your free website audit request has been received.",
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", businessName: "", email: "", websiteUrl: "", message: "" });
       } else {
         throw new Error("Failed to send");
       }
@@ -57,10 +59,10 @@ export default function ContactSection() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              Let's Build Your Next System
+              Get a Free Website Audit + Strategy Call
             </h2>
             <p className="text-xl text-muted-foreground">
-              Ready to transform your business? Get in touch with us today.
+              We'll review your current website and show you exactly how to improve conversions, speed, and design — free of charge.
             </p>
           </div>
 
@@ -110,6 +112,15 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <Input
+                    placeholder="Business Name"
+                    value={formData.businessName}
+                    onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
+                    required
+                    data-testid="input-business-name"
+                  />
+                </div>
+                <div>
+                  <Input
                     type="email"
                     placeholder="Your Email"
                     value={formData.email}
@@ -119,12 +130,21 @@ export default function ContactSection() {
                   />
                 </div>
                 <div>
+                  <Input
+                    type="url"
+                    placeholder="Website URL (optional)"
+                    value={formData.websiteUrl}
+                    onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
+                    data-testid="input-website-url"
+                  />
+                </div>
+                <div>
                   <Textarea
                     placeholder="Tell us about your project..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                    rows={6}
+                    rows={5}
                     data-testid="input-message"
                   />
                 </div>
@@ -135,7 +155,7 @@ export default function ContactSection() {
                   disabled={isSubmitting}
                   data-testid="button-submit"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Request Free Audit"}
                 </Button>
               </form>
             </div>

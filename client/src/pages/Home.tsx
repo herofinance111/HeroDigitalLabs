@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import SolutionsSection from "@/components/SolutionsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -8,29 +10,29 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Hero Digital Labs | AI, Automation & Web Systems for Growth";
+    document.title = "Hero Digital Labs | Website Design & Redesign Experts Gold Coast";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "We help businesses scale with modern websites and AI-powered systems. Based on the Gold Coast."
+        "Hero Digital Labs builds high-performing websites for small businesses. Modern design, SEO-ready, and built for growth. Based on the Gold Coast."
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "We help businesses scale with modern websites and AI-powered systems. Based on the Gold Coast.";
+      meta.content = "Hero Digital Labs builds high-performing websites for small businesses. Modern design, SEO-ready, and built for growth. Based on the Gold Coast.";
       document.head.appendChild(meta);
     }
 
     // Open Graph tags
     const ogTags = [
-      { property: "og:title", content: "Hero Digital Labs | AI, Automation & Web Systems for Growth" },
-      { property: "og:description", content: "We help businesses scale with modern websites and AI-powered systems. Based on the Gold Coast." },
+      { property: "og:title", content: "Hero Digital Labs | Website Design & Redesign Experts Gold Coast" },
+      { property: "og:description", content: "Hero Digital Labs builds high-performing websites for small businesses. Modern design, SEO-ready, and built for growth." },
       { property: "og:type", content: "website" },
       { property: "twitter:card", content: "summary_large_image" },
-      { property: "twitter:title", content: "Hero Digital Labs | AI, Automation & Web Systems for Growth" },
-      { property: "twitter:description", content: "We help businesses scale with modern websites and AI-powered systems. Based on the Gold Coast." },
+      { property: "twitter:title", content: "Hero Digital Labs | Website Design & Redesign Experts Gold Coast" },
+      { property: "twitter:description", content: "Hero Digital Labs builds high-performing websites for small businesses. Modern design, SEO-ready, and built for growth." },
     ];
 
     ogTags.forEach(({ property, content }) => {
@@ -50,6 +52,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <SolutionsSection />
+        <TestimonialsSection />
+        <PortfolioSection />
         <AboutSection />
         <ContactSection />
       </main>

@@ -28,8 +28,11 @@ export default function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               About Hero Digital Labs
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Founded by <span className="text-primary font-semibold">Ryan Heron</span>, Hero Digital Labs blends design, automation, and AI to help ambitious brands scale intelligently. We believe in creating digital experiences that don't just look good—they drive real business results.
+            <p className="text-xl text-muted-foreground leading-relaxed mb-4">
+              We help ambitious businesses stand out online. Founded by <span className="text-primary font-semibold">Ryan Heron</span>, Hero Digital Labs blends design, strategy, and automation to create websites that actually grow your business.
+            </p>
+            <p className="text-lg text-muted-foreground/80">
+              Based in the Gold Coast. Working with businesses across Australia.
             </p>
           </div>
 

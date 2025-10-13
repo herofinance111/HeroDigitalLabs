@@ -19,13 +19,13 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-6 text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-          AI. Automation. Web Systems
+          High-Performing Websites
           <br />
-          <span className="text-primary">Built for Growth.</span>
+          <span className="text-primary">That Turn Visitors Into Clients.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-          Hero Digital Labs helps small businesses grow through intelligent design and automation.
+          Hero Digital Labs builds fast, modern, and beautiful websites designed to grow your business — not just exist online.
         </p>
 
         <p className="text-lg text-muted-foreground/80 mb-12 max-w-2xl mx-auto italic">
@@ -39,16 +39,16 @@ export default function HeroSection() {
             className="text-lg px-8"
             data-testid="button-get-consultation"
           >
-            Get a Free Consultation
+            Get a Free Website Audit
           </Button>
           <Button
             size="lg"
             variant="outline"
-            onClick={() => scrollToSection("solutions")}
+            onClick={() => scrollToSection("portfolio")}
             className="text-lg px-8"
             data-testid="button-view-work"
           >
-            View Work
+            View Our Work
           </Button>
         </div>
 

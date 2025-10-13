@@ -47,9 +47,16 @@ export default function Navigation() {
             <button
               onClick={() => scrollToSection("solutions")}
               className="text-foreground/80 hover:text-primary transition-colors"
-              data-testid="link-solutions"
+              data-testid="link-services"
             >
-              Solutions
+              Services
+            </button>
+            <button
+              onClick={() => scrollToSection("portfolio")}
+              className="text-foreground/80 hover:text-primary transition-colors"
+              data-testid="link-portfolio"
+            >
+              Portfolio
             </button>
             <button
               onClick={() => scrollToSection("about")}
@@ -80,7 +87,7 @@ export default function Navigation() {
               onClick={() => scrollToSection("contact")}
               data-testid="button-book-call"
             >
-              Book a Call
+              Get a Free Audit
             </Button>
           </div>
         </div>
