@@ -8,21 +8,18 @@ const solutions = [
     title: "Website Redesigns",
     description: "Give your business a modern refresh.",
     features: ["Mobile Optimized", "SEO Enhanced", "Conversion Focused"],
-    pricing: "From $799",
   },
   {
     icon: Sparkles,
     title: "New Website Builds",
     description: "Launch your brand online, the right way.",
     features: ["Custom Design", "Fast Loading", "Brand Identity"],
-    pricing: "From $1,299",
   },
   {
     icon: Target,
     title: "Landing Page Optimization",
     description: "Turn clicks into conversions.",
     features: ["High Converting", "A/B Ready", "Analytics Integrated"],
-    pricing: "From $599",
   },
 ];
 
@@ -63,8 +60,7 @@ export default function SolutionsSection() {
                   <h3 className="text-2xl font-bold mb-2 text-card-foreground">
                     {solution.title}
                   </h3>
-                  <p className="text-muted-foreground text-lg mb-3">{solution.description}</p>
-                  <p className="text-primary font-semibold text-lg">{solution.pricing}</p>
+                  <p className="text-muted-foreground text-lg">{solution.description}</p>
                 </div>
                 <ul className="space-y-2 mb-6">
                   {solution.features.map((feature, i) => (

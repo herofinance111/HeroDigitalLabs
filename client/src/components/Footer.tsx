@@ -14,9 +14,8 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <Logo className="h-8 w-8" />
-              <span className="text-xl font-bold text-foreground">Hero Digital Labs</span>
+            <div className="mb-4">
+              <Logo className="h-10" />
             </div>
             <p className="text-muted-foreground">
               High-Performing Websites That Turn Visitors Into Clients.
@@ -42,15 +41,6 @@ export default function Footer() {
                   data-testid="footer-link-services"
                 >
                   Services
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("portfolio")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="footer-link-portfolio"
-                >
-                  Portfolio
                 </button>
               </li>
               <li>

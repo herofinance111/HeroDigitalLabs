@@ -1,27 +1,19 @@
+import { useTheme } from "./ThemeProvider";
+import logoLight from "@assets/HDL Logo 2_1760343992449.png";
+import logoDark from "@assets/ChatGPT Image Oct 13, 2025, 06_23_19 PM_1760343992449.png";
+
 interface LogoProps {
   className?: string;
 }
 
-export default function Logo({ className = "h-8 w-8" }: LogoProps) {
+export default function Logo({ className = "h-8" }: LogoProps) {
+  const { theme } = useTheme();
+  
   return (
-    <svg 
-      viewBox="0 0 100 100" 
+    <img 
+      src={theme === "dark" ? logoDark : logoLight}
+      alt="Hero Digital Labs"
       className={className}
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path 
-        d="M20 20 L20 80 L45 80 L45 55 L70 55 L70 80 L80 80 L80 20 L70 20 L70 45 L45 45 L45 20 Z" 
-        fill="currentColor"
-        className="text-primary"
-      />
-      <path 
-        d="M70 45 L80 35 L80 20" 
-        stroke="currentColor" 
-        strokeWidth="3" 
-        strokeLinecap="round"
-        className="text-primary"
-      />
-    </svg>
+    />
   );
 }

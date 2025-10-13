@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PortfolioSection from "@/components/PortfolioSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -53,7 +52,6 @@ export default function Home() {
         <HeroSection />
         <SolutionsSection />
         <TestimonialsSection />
-        <PortfolioSection />
         <AboutSection />
         <ContactSection />
       </main>

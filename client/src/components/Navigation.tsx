@@ -32,8 +32,7 @@ export default function Navigation() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Logo className="h-8 w-8" />
-            <span className="text-xl font-bold text-foreground">Hero Digital Labs</span>
+            <Logo className="h-10" />
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -50,13 +49,6 @@ export default function Navigation() {
               data-testid="link-services"
             >
               Services
-            </button>
-            <button
-              onClick={() => scrollToSection("portfolio")}
-              className="text-foreground/80 hover:text-primary transition-colors"
-              data-testid="link-portfolio"
-            >
-              Portfolio
             </button>
             <button
               onClick={() => scrollToSection("about")}

@@ -44,11 +44,11 @@ export default function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => scrollToSection("portfolio")}
+            onClick={() => scrollToSection("solutions")}
             className="text-lg px-8"
-            data-testid="button-view-work"
+            data-testid="button-view-services"
           >
-            View Our Work
+            View Services
           </Button>
         </div>
 

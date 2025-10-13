@@ -93,7 +93,7 @@ export default function ContactSection() {
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Clock className="h-5 w-5 text-primary" />
                     </div>
-                    <span className="text-foreground/80">Mon–Fri 9–5</span>
+                    <span className="text-foreground/80">24/7 Available</span>
                   </div>
                 </div>
               </div>
