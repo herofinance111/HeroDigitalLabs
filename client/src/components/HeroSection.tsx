@@ -44,11 +44,15 @@ export default function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => scrollToSection("solutions")}
+            onClick={() => {
+              if (window.voiceflow?.chat?.open) {
+                window.voiceflow.chat.open();
+              }
+            }}
             className="text-lg px-8"
-            data-testid="button-view-services"
+            data-testid="button-hero-assistant"
           >
-            View Services
+            Talk to Hero Assistant
           </Button>
         </div>
 
