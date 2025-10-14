@@ -3,6 +3,8 @@ import { useEffect } from "react";
 export default function VoiceflowChat() {
   useEffect(() => {
     const script = document.createElement('script');
+    const firstScript = document.getElementsByTagName('script')[0];
+    
     script.onload = () => {
       if (window.voiceflow) {
         window.voiceflow.chat.load({
@@ -11,17 +13,17 @@ export default function VoiceflowChat() {
           versionID: 'production',
           voice: {
             url: "https://runtime-api.voiceflow.com"
-          },
-          render: {
-            mode: 'embedded',
-            target: document.getElementById('voiceflow-chat')
           }
         });
       }
     };
+    
     script.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
     script.type = "text/javascript";
-    document.body.appendChild(script);
+    
+    if (firstScript && firstScript.parentNode) {
+      firstScript.parentNode.insertBefore(script, firstScript);
+    }
 
     return () => {
       // Cleanup script on unmount
@@ -31,13 +33,7 @@ export default function VoiceflowChat() {
     };
   }, []);
 
-  return (
-    <div 
-      id="voiceflow-chat"
-      className="fixed bottom-6 right-6 z-50"
-      data-testid="voiceflow-chat-container"
-    />
-  );
+  return null;
 }
 
 declare global {
