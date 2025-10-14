@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
-import Logo from "./Logo";
 import { useTheme } from "./ThemeProvider";
 
 export default function Navigation() {
@@ -32,7 +31,7 @@ export default function Navigation() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Logo className="h-10" />
+            <span className="text-xl font-bold text-foreground">Hero Digital Labs</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">

@@ -1,5 +1,4 @@
 import { SiLinkedin, SiInstagram } from "react-icons/si";
-import Logo from "./Logo";
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
@@ -15,7 +14,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <Logo className="h-10" />
+              <span className="text-2xl font-bold text-foreground">Hero Digital Labs</span>
             </div>
             <p className="text-muted-foreground">
               High-Performing Websites That Turn Visitors Into Clients.
