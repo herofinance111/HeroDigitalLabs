@@ -35,15 +35,6 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
           <Button
             size="lg"
-            onClick={() => scrollToSection("contact")}
-            className="text-lg px-8"
-            data-testid="button-get-consultation"
-          >
-            Get a Free Website Audit
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
             onClick={() => {
               if (window.voiceflow?.chat?.open) {
                 window.voiceflow.chat.open();
@@ -52,7 +43,16 @@ export default function HeroSection() {
             className="text-lg px-8"
             data-testid="button-hero-assistant"
           >
-            Talk to Hero Assistant
+            Talk to Assistant
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            onClick={() => scrollToSection("contact")}
+            className="text-lg px-8"
+            data-testid="button-contact"
+          >
+            Contact Us
           </Button>
         </div>
 
